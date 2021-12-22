@@ -1,38 +1,16 @@
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
+html {
+    background-color: antiquewhite;
 }
 
-header {
-    background-color: antiquewhite;
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+    max-width: 1080px;
+    overflow-x: hidden;
 }
 
 #topContainer {
     margin: 0 auto;
-    max-width: 1080px;
-}
-
-nav img {
-    max-width:50px;
-    margin: 0px 20px;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 20px;
-}
-
-nav ul {
-    margin-right: 20px;
-}
-
-nav li {
-    display: inline;
-    margin: 0px 10px;
-    font-size: 1.5rem;
-    padding: 0 20px;
 }
 
 .leftBox {

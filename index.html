@@ -1,37 +1,43 @@
 <!DOCTYPE html>
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="viewport" content="width=device-width">
 <html>
     <head>
         <title>Alessandro Justesen Leoni's website</title>
         <link href='./index.css' rel='stylesheet'>
+        <link href='./nav.css' rel='stylesheet'>
+        <link href='./utils.css' rel='stylesheet'>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <script src="./nav.js" defer></script>
     </head>
     <body>
-        <header>
-            <div id="topContainer">
-                <nav>
-                    <img src="./Lions.png">
-                    <ul>
-                        <li><a>Home</a></li>
-                        <li><a>Projects</a></li>
-                        <li><a>Interests</a></li>
-                        <li><a>Others</a></li>
-                    </ul>
-                </nav>
-                <section class="hero lefthanded">
-                    <div class="leftBox">
-                        <p>Hello,</p>
-                        <h1>I am Alessandro Justesen Leoni</h1>
-                        <p>This is my personal website. Here you can lean more about me. Welcome dear visitor.</p>
-                        <div class="button"><p><a>Download CV</a></p></div>
-                    </div>
-                    <img src="./Alessandro.png">
-                </section>
-            </div>      
+        <header class="flex">
+            <div>
+                <img class="logo" src="./Lions.png" alt="Alessandro's personal logo">
+            </div>
+            <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                <span class="sr-only">Menu</span>
+            </button>
+            <nav>
+                <ul id="top-navigation" class="top-navigation flex" data-visible="false">
+                    <li class="active"><a href="./index.html">Home</a></li>
+                    <li><a href="./projects.html">Projects</a></li>
+                    <li><a href="./interests.html">Interests</a></li>
+                    <li><a href="./others.html">Others</a></li>
+                </ul>
+            </nav>
         </header>
         <main>
+            <section class="hero lefthanded">
+                <div class="leftBox">
+                    <p>Hello,</p>
+                    <h1>I am Alessandro Justesen Leoni</h1>
+                    <p>This is my personal website. Here you can lean more about me. Welcome dear visitor.</p>
+                    <div class="button"><p><a>Download CV</a></p></div>
+                </div>
+                <img src="./Alessandro.png">
+            </section>
             <div id="mainContainer">
                 <h2>Link to coding learning projects:</h2>
                 <ul>

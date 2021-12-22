@@ -1,0 +1,10 @@
+/*general utility classes*/
+
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+
+.sr-only {
+    display: none;
+}
