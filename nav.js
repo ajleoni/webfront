@@ -7,8 +7,10 @@ navToggle.addEventListener("click", () => {
     console.log(visibility);
     if (visibility === "false") {
         topNav.setAttribute("data-visible", true);
+        navToggle.setAttribute("aria-expanded", true);
     } else if (visibility === "true") {
         topNav.setAttribute("data-visible", false);
+        navToggle.setAttribute("aria-expanded", false);
     }
 }
 );

@@ -5,30 +5,37 @@ html {
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0 auto;
-    max-width: 1080px;
+    width:90%;
+    max-width:70rem;
     overflow-x: hidden;
 }
 
-#topContainer {
-    margin: 0 auto;
+.box {
+    max-width: 35rem;
+
 }
 
-.leftBox {
-    margin-top: 150px;
-    margin-left:50px;
-    width: 60%;
+.box img {
     flex-shrink: 1;
-    min-width: 300px;
+    max-width: 100%;
 }
 
-.hero {
-    display: flex;
+.lefttext {
+    margin-left: 2rem;
 }
 
-.hero img {
-    max-width: 500px;
-    flex-shrink: 1;
+@media (max-width:45em) {
+    .lefthand {
+   flex-direction: column;   
+    }
 }
+
+@media (min-width:45em) {
+    .lefttext {
+        margin-top: 4rem;
+    }
+}
+
 
 
 h1 {
